@@ -49,9 +49,9 @@ defmodule GameOfLife do
     end
   end
 
-  def next_generation(pattern, rounds_left, total_rounds) when rounds_left <= 0 do
-    Draw.main(pattern, total_rounds)
-  end
+  # def next_generation(pattern, rounds_left, total_rounds) when rounds_left <= 0 do
+  #   Draw.main(pattern, total_rounds)
+  # end
 
   def next_generation(%Pattern{rows: rows} = pattern, rounds_left, total_rounds) do
     rows = 
@@ -61,8 +61,14 @@ defmodule GameOfLife do
         end
       end
     pattern = %Pattern{pattern | rows: rows}
-    Draw.main(pattern, total_rounds - rounds_left)
-    next_generation(pattern, rounds_left - 1, total_rounds)
+    round = total_rounds - rounds_left + 1
+    IO.puts "Drawing round #{round}..."
+    Draw.main(pattern, round)
+    if rounds_left - 1 > 0 do
+      next_generation(pattern, rounds_left - 1, total_rounds)
+    else
+      :ok
+    end
   end
 
 end
