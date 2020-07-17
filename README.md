@@ -1,5 +1,5 @@
 # Cellular Automata + Game Of Life
-Command-line tool to create .png snapshots of cellular automata and Conway's game of life simulations.
+Command-line tool to create .png snapshots of cellular automata and Conway's game of life simulations. Snapshots are automatically saved to snaps directory.
 
 # Installation
 [Install Elixir](https://elixir-lang.org/install.html)
