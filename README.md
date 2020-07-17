@@ -1,6 +1,6 @@
 # Cellular Automata + Game Of Life
 
-#Installation
+# Installation
 
 # Usage
 
