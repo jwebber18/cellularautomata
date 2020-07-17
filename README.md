@@ -22,4 +22,4 @@ Rule 30 -- 1000 rows
 
 ```CellularAutomata.main(30, 1000)```
 
-![Rule 30, 1000 rows](https://imgur.com/L0jjckx)
+![](https://i.imgur.com/L0jjckx.png)
