@@ -14,12 +14,18 @@ Start it up:
 
 # Usage
 
-Create a single cellular automata for given ruleset with given number of rows:
+### Create a single cellular automata for given ruleset with given number of rows:
 
 ```CellularAutomata.main(rule_int, num_rows)```
 
-Rule 30 -- 1000 rows
+#### Rule 30 -- 1000 rows
 
 ```CellularAutomata.main(30, 1000)```
 
 ![](https://i.imgur.com/L0jjckx.png)
+
+#### Rule 150 -- 1000 rows
+
+```CellularAutomata.main(150, 1000)```
+
+![](https://imgur.com/HwAPI4X.png)
